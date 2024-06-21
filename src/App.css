@@ -1,0 +1,99 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #f4f4f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 0.1;
+  font-weight: bold;
+  font-size: 10px;
+
+  /*background-image: url("./../public/uefa-euro-2024.webp");*/
+}
+
+tbody {
+  color: #112bd8;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  /* background-image: url("./../public/euro_cup_3.png");*/
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 256px;
+    height: 100px;
+  }
+}
+section {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  align-items: center;
+}
+h1 {
+  color: rgb(49, 59, 207);
+  text-align: center;
+  font-family: "Segoe UI", Geneva, sans-serif;
+  /* background-image: url("./../public/euro_cup_3.png");*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 80px;
+}
+h2 {
+  color: #4a2183;
+  text-align: center;
+  width: 10px;
+  font-size: medium;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  gap: 1.5px; /* Add some space between time elements */
+}
+
+div.scoreboard {
+  border-image: linear-gradient(
+    to right,
+    #4a4646 25%,
+    #ffcd02 25%,
+    #ffcd02 25%,
+    #e84f47 50%,
+    #e84f47 25%,
+    #112bd8 25%,
+    #4ad7ad 75%
+  );
+  border-width: 3px;
+  /*border-width: 10px 15px 10px 15px;*/
+  border-style: solid;
+  border-image-slice: 1;
+  background: #fff;
+  margin: 1px;
+  padding: 5px 5px 5px 5px;
+  box-sizing: border-box 4px solid white;
+  /*   background-image: url("./../public/euro_cup.jpg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: right top 5px; */
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+div.score-container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(190px, 1fr));
+  grid-auto-rows: 210px;
+  gap: 5px;
+}
+div.app-container {
+  width: 100%;
+  padding: 5px 5px 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
